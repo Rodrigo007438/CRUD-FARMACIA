@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Popular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Farmácia Popular</h1>
+        <h2>Catálogo de remédios</h2>
+    </header>
+
+    <main id="catalogo_remedios"></main>
+    <hr> <h2>Meus Pedidos</h2>
+    <section id="lista_pedidos"></section>
+
+    <div id="modal_pedidos_overlay" class="modal_hidden">
+        <form id="form_pedidos">
+            
+            <h3>Confirmar Pedido</h3>
+            <p>Você está pedindo: <strong id="form_remedio_nome"></strong></p>
+
+            <input type="hidden" id="fomr_remedio_nome">
+            <input type="hidden" id="form_remedio_preco">
+
+            <div>
+                <label for="nome_cliente">Seu nome:</label>
+                <input type="text" id="nome_cliente" required>
+            </div>
+
+            <div>
+                <label for="email_cliente">Seu email:</label>
+                <input type="email" id="email_cliente" required>
+            </div>
+
+            <button type="submit">Confirmar Pedido</button>
+            <button type="button" id="cancela_pedido">Cancelar Pedido</button>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
