@@ -31,7 +31,7 @@ header{
 
 .remedio_card img{
     width: 100%;
-    height: 200%;
+    height: 200px;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -41,7 +41,7 @@ header{
     color: #333;
 }
 
-.remedio_card ,preco{
+.preco{
     font-size: 1.2em;
     font-weight: bold;
     color: #007bff;
@@ -65,11 +65,9 @@ header{
 }
 
 /*Estilo Formulário*/
-.modal_hidden{
-    display: none;
-}
 
-modal_pedido_overlay{
+
+#modal_pedidos_overlay{
     position: fixed;
     top: 0;
     left: 0;
@@ -82,11 +80,15 @@ modal_pedido_overlay{
     z-index: 1000;
 }
 
+#modal_pedidos_overlay.modal_hidden{
+    display: none;
+}
+
 #form_pedidos{
     background-color: #ffff;
     padding: 30px;
     border-radius: 8px;
-    width: 40px;
+    width: 400px;
 }
 
 #form_pedidos div{
