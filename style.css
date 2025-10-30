@@ -111,7 +111,8 @@ body.perfil_gerente #lista_pedidos{
 /*Estilo Formulário*/
 
 
-#modal_pedidos_overlay{
+#modal_pedidos_overlay
+#catalogo{
     position: fixed;
     top: 0;
     left: 0;
