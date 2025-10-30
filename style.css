@@ -19,6 +19,26 @@ header{
     margin-top: 20px;
 }
 
+/*Permições*/
+
+/*Escondendo a seção de pediddos por padrão*/
+
+#pedidos_hr,
+#pedidos_titulo,
+#lista_pedidos{
+    display: none;
+}
+
+/*mostra a seção pro gerente*/
+body.perfil_gerente #pedidos_hr,
+body.perfil_gerente #pedidos_titulo{
+    display: block;
+}
+
+body.perfil_gerente #lista_pedidos{
+    display: grid;
+}
+
 /*estilizar cartões*/
 .remedio_card,
 .pedido_card{
@@ -65,13 +85,16 @@ header{
 }
 
 .remedio_card,
+.pedido_card,
 .remedio_card button,
 .pedido_card button{
     transition: all 0.3s ease;
 }
 
 /* Efeito de "levantar" o cartão ao passar o mouse */
-.remedio_card:hover {
+
+.remedio_card:hover,
+.pedido_card:hover{
     transform: translateY(-4px); /* Levanta o cartão 4px */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais forte */
 }
@@ -126,4 +149,16 @@ header{
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
+}
+
+/*Login*/
+
+.login_card{
+    max-width: 500px;
+    margin: 40px auto; /*centraliza*/
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
