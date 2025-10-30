@@ -1,3 +1,19 @@
+//Identificando usuario
+perfil_logado = localStorage.getItem('perfil_usuario');
+
+if(perfil_logado === 'gerente'){
+    document.body.classList.add('perfil_gerente');
+    console.log('Status:Logado como gerente');
+}else if(perfil_logado === 'cliente'){
+    document.body.classList.add('perfil_cliente');
+    console.log('Status: Logado como cliente');
+}else{
+    alert('Você precisa fazer login para acessar essa pagina.');
+
+    window.location.href = 'login.html';
+}
+
+
 // --- 1. CONFIGURAÇÃO DA API ---
 const API_URL = "https://69010550ff8d792314bc5118.mockapi.io/farmacia_api";
 
@@ -223,4 +239,7 @@ async function deletar_pedido(pedido_id, remedio_id, estoque_atual) {
 
 // --- 9. INICIALIZAÇÃO ---
 buscar_remedios();
+
+if(perfil_logado === 'gerente'){
 buscar_pedidos();
+}
