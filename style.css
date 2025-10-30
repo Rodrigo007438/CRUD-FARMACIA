@@ -136,10 +136,7 @@ body.perfil_gerente #lista_pedidos{
     width: 400px;
 }
 
-#menu{
-    background-color: #28a745;
-    border-radius: 8px;
-}
+
 
 #form_pedidos div{
     margin-bottom: 15px;
@@ -168,3 +165,4 @@ body.perfil_gerente #lista_pedidos{
     padding: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
