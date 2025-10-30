@@ -62,4 +62,4 @@ Este projeto foi construído "do zero" (sem frameworks) para focar nos fundament
     *Gerente: `admin` / `admin123`
     *Cliente: `cliente` / `cliente123`
 
-**[🔗 Clique aqui para ver o projeto ao vivo](https://rodrigo007438.github.io/CRUD-FARMACIA/)**
+**[🔗 Clique aqui para ver o projeto ao vivo](https://rodrigo007438.github.io/CRUD-FARMACIA/login)**
