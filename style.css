@@ -136,6 +136,11 @@ body.perfil_gerente #lista_pedidos{
     width: 400px;
 }
 
+#menu{
+    background-color: #28a745;
+    border-radius: 8px;
+}
+
 #form_pedidos div{
     margin-bottom: 15px;
 }
