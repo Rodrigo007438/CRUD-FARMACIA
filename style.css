@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto' ,Arial, sans-serif;
     background-color: #f0f2f5;
     margin: 0;
     padding: 20px;
@@ -26,7 +26,7 @@ header{
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .remedio_card img{
@@ -50,7 +50,7 @@ header{
 
 .remedio_card button,
 .pedido_card button{
-    background-color: #007bff;
+    background-color: #28a745;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -60,8 +60,29 @@ header{
 }
 
 .pedido_card button{
-    background-color: #dc3545;
+    background-color: #6c757d;
     margin-top: 10px;
+}
+
+.remedio_card,
+.remedio_card button,
+.pedido_card button{
+    transition: all 0.3s ease;
+}
+
+/* Efeito de "levantar" o cartão ao passar o mouse */
+.remedio_card:hover {
+    transform: translateY(-4px); /* Levanta o cartão 4px */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra mais forte */
+}
+
+/* Efeito de escurecer o botão ao passar o mouse */
+.remedio_card button:hover {
+    background-color: #218838; /* Verde mais escuro */
+}
+
+.pedido_card button:hover {
+    background-color: #5a6268; /* Cinza mais escuro */
 }
 
 /*Estilo Formulário*/
