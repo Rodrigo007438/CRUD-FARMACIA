@@ -32,7 +32,7 @@ Este projeto implementa um ciclo de logica de negócios completo:
     * Ao criar um pedido, o sistema automaticamente faz um `fetch PUT` para o remédio correspondente, decrementando (-1) a quantidade do estoque.
     * Impede pedidos de itens com estoque zero.
 
-*Cancelamento de Pedidos (Delete) e Estorno:**
+*Cancelamento de Pedidos (Delete) e Estorno:
     * (Disponível apenas para Gerentes) Permite cancelar um pedido.
     * Executa uma transação: primeiro faz um `fetch PUT` para estornar (+1) o item ao estoque, e depois faz um `fetch DELETE` para remover o pedido.
 
