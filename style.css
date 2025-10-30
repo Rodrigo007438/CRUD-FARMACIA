@@ -166,3 +166,7 @@ body.perfil_gerente #lista_pedidos{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+#menu{
+    background-color: #28a745;
+    border-radius: 8px;
+}
